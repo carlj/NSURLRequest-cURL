@@ -1,1 +1,3 @@
 language: objective-c
+xcode_project: NSURLRequest-cURL.xcodeproj
+xcode_scheme: NSURLRequest-cURL
