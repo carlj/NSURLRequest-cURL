@@ -11,8 +11,8 @@
 		FA668D2919D173600023845E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA668D2219D173600023845E /* ViewController.m */; };
 		FA668D2B19D173600023845E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA668D2519D173600023845E /* main.m */; };
 		FA668D2C19D173600023845E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA668D2719D173600023845E /* Images.xcassets */; };
-		FA7CA6E219D17434008B8E40 /* NSURLReqeust_cURLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA668D2E19D1738E0023845E /* NSURLReqeust_cURLTests.m */; };
-		FA9EA9F719C97D07006C907B /* NSURLRequest+cURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9EA9F619C97D07006C907B /* NSURLRequest+cURL.m */; };
+		FA7CA6E219D17434008B8E40 /* NSURLRequest_cURLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA668D2E19D1738E0023845E /* NSURLRequest_cURLTests.m */; };
+		FA7CA6E519D17BD5008B8E40 /* NSURLRequest+cURL.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7CA6E419D17BD5008B8E40 /* NSURLRequest+cURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +22,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = FA9EA9CB19C97CEE006C907B;
 			remoteInfo = "NSURLReqeust-cURL";
+		};
+		FACB87F419D17DBB00E0C216 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA9EA9C419C97CEE006C907B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA9EA9CB19C97CEE006C907B;
+			remoteInfo = "NSURLRequest-cURL";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -34,11 +41,11 @@
 		FA668D2519D173600023845E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA668D2719D173600023845E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA668D2D19D1738E0023845E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
-		FA668D2E19D1738E0023845E /* NSURLReqeust_cURLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSURLReqeust_cURLTests.m; path = Tests/NSURLReqeust_cURLTests.m; sourceTree = SOURCE_ROOT; };
-		FA9EA9CC19C97CEE006C907B /* NSURLReqeust-cURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSURLReqeust-cURL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA9EA9E519C97CEE006C907B /* NSURLReqeust-cURLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSURLReqeust-cURLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA9EA9F519C97D07006C907B /* NSURLRequest+cURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+cURL.h"; sourceTree = "<group>"; };
-		FA9EA9F619C97D07006C907B /* NSURLRequest+cURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+cURL.m"; sourceTree = "<group>"; };
+		FA668D2E19D1738E0023845E /* NSURLRequest_cURLTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSURLRequest_cURLTests.m; path = Tests/NSURLRequest_cURLTests.m; sourceTree = SOURCE_ROOT; };
+		FA7CA6E319D17BD5008B8E40 /* NSURLRequest+cURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+cURL.h"; path = "NSURLRequest-cURL/NSURLRequest+cURL.h"; sourceTree = SOURCE_ROOT; };
+		FA7CA6E419D17BD5008B8E40 /* NSURLRequest+cURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+cURL.m"; path = "NSURLRequest-cURL/NSURLRequest+cURL.m"; sourceTree = SOURCE_ROOT; };
+		FA9EA9CC19C97CEE006C907B /* NSURLRequest-cURL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSURLRequest-cURL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9EA9E519C97CEE006C907B /* NSURLRequest-cURLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSURLRequest-cURLTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +107,7 @@
 		FA9EA9C319C97CEE006C907B = {
 			isa = PBXGroup;
 			children = (
-				FA9EA9CE19C97CEE006C907B /* NSURLReqeust+cURL */,
+				FA9EA9CE19C97CEE006C907B /* NSURLRequest+cURL */,
 				FA668D1D19D173600023845E /* Example */,
 				FA9EA9E819C97CEE006C907B /* Tests */,
 				FA9EA9CD19C97CEE006C907B /* Products */,
@@ -110,19 +117,19 @@
 		FA9EA9CD19C97CEE006C907B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA9EA9CC19C97CEE006C907B /* NSURLReqeust-cURL.app */,
-				FA9EA9E519C97CEE006C907B /* NSURLReqeust-cURLTests.xctest */,
+				FA9EA9CC19C97CEE006C907B /* NSURLRequest-cURL.app */,
+				FA9EA9E519C97CEE006C907B /* NSURLRequest-cURLTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA9EA9CE19C97CEE006C907B /* NSURLReqeust+cURL */ = {
+		FA9EA9CE19C97CEE006C907B /* NSURLRequest+cURL */ = {
 			isa = PBXGroup;
 			children = (
-				FA9EA9F519C97D07006C907B /* NSURLRequest+cURL.h */,
-				FA9EA9F619C97D07006C907B /* NSURLRequest+cURL.m */,
+				FA7CA6E319D17BD5008B8E40 /* NSURLRequest+cURL.h */,
+				FA7CA6E419D17BD5008B8E40 /* NSURLRequest+cURL.m */,
 			);
-			name = "NSURLReqeust+cURL";
+			name = "NSURLRequest+cURL";
 			path = "NSURLReqeust-cURL";
 			sourceTree = "<group>";
 		};
@@ -130,7 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				FA668D2D19D1738E0023845E /* Info.plist */,
-				FA668D2E19D1738E0023845E /* NSURLReqeust_cURLTests.m */,
+				FA668D2E19D1738E0023845E /* NSURLRequest_cURLTests.m */,
 			);
 			name = Tests;
 			path = "NSURLReqeust-cURLTests";
@@ -139,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA9EA9CB19C97CEE006C907B /* NSURLReqeust-cURL */ = {
+		FA9EA9CB19C97CEE006C907B /* NSURLRequest-cURL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA9EA9EF19C97CEE006C907B /* Build configuration list for PBXNativeTarget "NSURLReqeust-cURL" */;
+			buildConfigurationList = FA9EA9EF19C97CEE006C907B /* Build configuration list for PBXNativeTarget "NSURLRequest-cURL" */;
 			buildPhases = (
 				FA9EA9C819C97CEE006C907B /* Sources */,
 				FA9EA9C919C97CEE006C907B /* Frameworks */,
@@ -151,14 +158,14 @@
 			);
 			dependencies = (
 			);
-			name = "NSURLReqeust-cURL";
+			name = "NSURLRequest-cURL";
 			productName = "NSURLReqeust-cURL";
-			productReference = FA9EA9CC19C97CEE006C907B /* NSURLReqeust-cURL.app */;
+			productReference = FA9EA9CC19C97CEE006C907B /* NSURLRequest-cURL.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FA9EA9E419C97CEE006C907B /* NSURLReqeust-cURLTests */ = {
+		FA9EA9E419C97CEE006C907B /* NSURLRequest-cURLTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA9EA9F219C97CEE006C907B /* Build configuration list for PBXNativeTarget "NSURLReqeust-cURLTests" */;
+			buildConfigurationList = FA9EA9F219C97CEE006C907B /* Build configuration list for PBXNativeTarget "NSURLRequest-cURLTests" */;
 			buildPhases = (
 				FA9EA9E119C97CEE006C907B /* Sources */,
 				FA9EA9E219C97CEE006C907B /* Frameworks */,
@@ -168,10 +175,11 @@
 			);
 			dependencies = (
 				FA9EA9E719C97CEE006C907B /* PBXTargetDependency */,
+				FACB87F519D17DBB00E0C216 /* PBXTargetDependency */,
 			);
-			name = "NSURLReqeust-cURLTests";
+			name = "NSURLRequest-cURLTests";
 			productName = "NSURLReqeust-cURLTests";
-			productReference = FA9EA9E519C97CEE006C907B /* NSURLReqeust-cURLTests.xctest */;
+			productReference = FA9EA9E519C97CEE006C907B /* NSURLRequest-cURLTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -192,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FA9EA9C719C97CEE006C907B /* Build configuration list for PBXProject "NSURLReqeust-cURL" */;
+			buildConfigurationList = FA9EA9C719C97CEE006C907B /* Build configuration list for PBXProject "NSURLRequest-cURL" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -205,8 +213,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA9EA9CB19C97CEE006C907B /* NSURLReqeust-cURL */,
-				FA9EA9E419C97CEE006C907B /* NSURLReqeust-cURLTests */,
+				FA9EA9CB19C97CEE006C907B /* NSURLRequest-cURL */,
+				FA9EA9E419C97CEE006C907B /* NSURLRequest-cURLTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,10 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7CA6E519D17BD5008B8E40 /* NSURLRequest+cURL.m in Sources */,
 				FA668D2919D173600023845E /* ViewController.m in Sources */,
 				FA668D2819D173600023845E /* AppDelegate.m in Sources */,
 				FA668D2B19D173600023845E /* main.m in Sources */,
-				FA9EA9F719C97D07006C907B /* NSURLRequest+cURL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7CA6E219D17434008B8E40 /* NSURLReqeust_cURLTests.m in Sources */,
+				FA7CA6E219D17434008B8E40 /* NSURLRequest_cURLTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +262,13 @@
 /* Begin PBXTargetDependency section */
 		FA9EA9E719C97CEE006C907B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FA9EA9CB19C97CEE006C907B /* NSURLReqeust-cURL */;
+			target = FA9EA9CB19C97CEE006C907B /* NSURLRequest-cURL */;
 			targetProxy = FA9EA9E619C97CEE006C907B /* PBXContainerItemProxy */;
+		};
+		FACB87F519D17DBB00E0C216 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA9EA9CB19C97CEE006C907B /* NSURLRequest-cURL */;
+			targetProxy = FACB87F419D17DBB00E0C216 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -371,7 +384,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSURLReqeust-cURL.app/NSURLReqeust-cURL";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSURLRequest-cURL.app/NSURLRequest-cURL";
 			};
 			name = Debug;
 		};
@@ -386,14 +399,14 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSURLReqeust-cURL.app/NSURLReqeust-cURL";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSURLRequest-cURL.app/NSURLRequest-cURL";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA9EA9C719C97CEE006C907B /* Build configuration list for PBXProject "NSURLReqeust-cURL" */ = {
+		FA9EA9C719C97CEE006C907B /* Build configuration list for PBXProject "NSURLRequest-cURL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA9EA9ED19C97CEE006C907B /* Debug */,
@@ -402,7 +415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA9EA9EF19C97CEE006C907B /* Build configuration list for PBXNativeTarget "NSURLReqeust-cURL" */ = {
+		FA9EA9EF19C97CEE006C907B /* Build configuration list for PBXNativeTarget "NSURLRequest-cURL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA9EA9F019C97CEE006C907B /* Debug */,
@@ -411,7 +424,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA9EA9F219C97CEE006C907B /* Build configuration list for PBXNativeTarget "NSURLReqeust-cURLTests" */ = {
+		FA9EA9F219C97CEE006C907B /* Build configuration list for PBXNativeTarget "NSURLRequest-cURLTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA9EA9F319C97CEE006C907B /* Debug */,

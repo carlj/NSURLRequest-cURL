@@ -10,11 +10,11 @@
 #import <XCTest/XCTest.h>
 #import "NSURLRequest+cURL.h"
 
-@interface NSURLReqeust_cURLTests : XCTestCase
+@interface NSURLRequest_cURLTests : XCTestCase
 
 @end
 
-@implementation NSURLReqeust_cURLTests
+@implementation NSURLRequest_cURLTests
 
 - (NSMutableURLRequest *)defaultRequest {
     NSString *urlString = @"http://www.google.de";
