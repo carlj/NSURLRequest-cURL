@@ -44,9 +44,9 @@
     
     NSDictionary *postData = @{ @"key1" : @"value1", @"key2" : @"value2" };
     request.HTTPBody = [NSJSONSerialization dataWithJSONObject:postData options:0 error:nil];
-    
-    
-    XCTAssertEqualObjects(@"curl -k -X POST --dump-header - -d \"{\\\"key2\\\":\\\"value2\\\",\\\"key1\\\":\\\"value1\\\"}\" \"http://www.google.de\"", [request cURLCommandString]);
+
+    NSString *testString = @"curl -k -X POST --dump-header - -d \"{\\\"key1\\\":\\\"value1\\\",\\\"key2\\\":\\\"value2\\\"}\" \"http://www.google.de\"";
+    XCTAssertEqualObjects(testString, [request cURLCommandString]);
 }
 
 @end
